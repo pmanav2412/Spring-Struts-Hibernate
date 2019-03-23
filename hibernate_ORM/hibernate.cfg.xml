@@ -34,10 +34,11 @@
  		      
       <!-- List of XML mapping files -->
        <!-- <mapping resource = "Customer.hbm.xml"/> -->
-    <!--  <mapping class="com.marlabs.withannotation.CustomerA"/> -->
+      <mapping class="com.marlabs.withannotation.CustomerA"/> 
      <!-- <mapping class="com.marlabs.catche.Customercache"/> -->
-     <mapping class="com.marlabs.hql.Employee"/>
-     <mapping class="com.marlabs.hql.HQLExample" />
+     <!-- <mapping class="com.marlabs.hql.Employee"/>
+     <mapping class="com.marlabs.hql.HQLExample" /> -->
+   
      
 		
 		<!-- 

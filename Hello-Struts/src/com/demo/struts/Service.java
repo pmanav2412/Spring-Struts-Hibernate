@@ -2,6 +2,7 @@ package com.demo.struts;
 
 
 
+import java.util.ArrayList;
 import java.util.List;
 
 
@@ -15,6 +16,7 @@ import org.hibernate.Transaction;
 import com.demo.hbm.HibernateUtil;
 
 
+
 public class Service {
 	
 	static boolean service(String p, String em) {
@@ -22,26 +24,19 @@ public class Service {
 //		Transaction t = session.beginTransaction();
 		
 			try {
-//			User user  = new User();
+			User user  = new User();
 //				user.setEmail(em);
 //				user.setPassword(p);
 //				session.save(user);
 //				t.commit();
 //				System.out.println("haaaaaasssssssss savvvvvvvvvveddd");
-		
-				
-				
-				
-				
-				
-				Query q = session.createQuery("FROM User WHERE email=:myemail and password=:mypassword");
-			    q.setParameter("myemail", em);
-				q.setParameter("password", p);
-		
-			    List<Object[]> Ulist = q.list();
-			    for(Object[] u: Ulist) {
-			    	System.out.println(u[0] + "   ewr   " + u[1]);
-			    }
+				Query query = session.createQuery("SELECT e.password,e.email FROM User e");
+//			     Query q = session.createQuery("From User");
+				List<Object[]> list = query.list();	
+				for (Object[] emp_fields : list) {
+					System.out.println(emp_fields[0] + "\t" + emp_fields[1] + "\t");
+					}
+				System.out.println("Size" + list.size());
 			session.close();
 			
 			return true;

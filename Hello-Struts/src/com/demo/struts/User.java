@@ -1,12 +1,15 @@
 package com.demo.struts;
 
+import java.io.Serializable;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+
 @Entity
-@Table(name="Useer")
+@Table(name="User")
 public class User {
 
 	@Id

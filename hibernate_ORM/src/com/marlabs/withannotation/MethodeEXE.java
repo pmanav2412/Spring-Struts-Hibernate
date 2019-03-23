@@ -17,10 +17,10 @@ public class MethodeEXE {
 	
 	private static void save() {
 		CustomerA customer = new CustomerA();
-		customer.setCustomerid(7);
-		customer.setCustomerName("m klgmrtngh");
+		// customer.setCustomerid(7);
+		customer.setCustomerName("darshan");
 	    customer.setCustomerCity("Bhroch");
-	    customer.setCustomerEmail("pmanav34@gmail.com");
+		customer.setCustomerEmail("pmandvsav34@gmail.com");
 		CustomerIN saveCustomer = new CustomerIMP();
 		saveCustomer.SaveCustomer(customer);
 	}
@@ -37,7 +37,7 @@ public class MethodeEXE {
 	
 	private static void Delete() {
 		CustomerA customer = new CustomerA();
-		customer.setCustomerid(2);
+//		customer.setCustomerid(2);
 		CustomerIN saveCustomer = new CustomerIMP();
 		saveCustomer.DeleteCustomer(customer);
 	}

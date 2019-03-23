@@ -5,8 +5,17 @@
 <package name="a" extends="struts-default"> 
 <action name="login" class="com.demo.struts.HelloAction" > 
 <result name="success">/LoginSuccess.jsp</result> 
+<result name="input">/Index.jsp</result> 
 <result name="error">/error.jsp</result> 
 </action> 
+
+
+<action name="insert" class="com.demo.struts.HelloAction" method="AddProduct" > 
+<result name="success">/LoginSuccess.jsp</result> 
+<result name="error">/error.jsp</result> 
+</action>
+ 
+
 </package>
 </struts> 
 

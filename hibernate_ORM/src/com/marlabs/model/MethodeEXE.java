@@ -6,11 +6,11 @@ public class MethodeEXE {
 
 	public static void main(String[] args) {
 		System.out.println("Main Methode Starts................................");
-	    //save();
+		save();
 	    //CustomerIN getCustomer = new CustomerIMP();
 	    //getCustomer.GetCustomer(1);
 		//Update();
-		Delete();
+		// Delete();
 		System.out.println("Main Methode Ends................................");
 
 	}  
